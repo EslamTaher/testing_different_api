@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+<head>
+    <!-- 45185f8a-5595-4dca-a730-067482a1af71 -->
+    <!-- 45185f8a-5595-4dca-a730-067482a1af71 -->
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=45185f8a-5595-4dca-a730-067482a1af71&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div id="map" style="width: 600px; height: 400px"></div>
+</body>
+<script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.76, 37.64],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 7
+        });
+    }
+</script>
+
+
+
+
+
+<!-- 
+
+<script src="./mapsapi-round-controls/build/release/all.js"></script>
+<script>
+
+
+    // Preset icon image.
+var button = new ymaps.control.Button({
+    data: {
+        iconType: 'loupe',
+        title: 'Button Text'
+    },
+    options: {
+        layout: 'round#buttonLayout',
+        maxWidth: 120
+    }
+});
+myMap.controls.add(button);
+
+
+
+</script> -->
+
+<h1>yandix api for map 
+
+</h1>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="821828008051-ol9p9m2o9fnr4g77umhq6vqdo7hmj24h.apps.googleusercontent.com">
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+<script>
+
+
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+
+<!-- EpwKNL71n8sESnyZmJ_qqQOo -->
